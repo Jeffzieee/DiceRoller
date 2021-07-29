@@ -11,6 +11,5 @@ class MainActivity : AppCompatActivity() {
         //Button Defined
         val b1 = findViewById<Button>(R.id.b1)
         b1.text="GO!"
-
     }
 }
