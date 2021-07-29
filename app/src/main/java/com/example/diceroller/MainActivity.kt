@@ -17,10 +17,19 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
+     //function to rollDice
     open fun rollDice() {
-      val t1 = findViewById<TextView>(R.id.result_text)
-        var random = Random().nextInt(6) + 1
-        t1.text=random.toString()
+        val dice = findViewById<ImageView>(R.id.dice_image)
+         var random = Random().nextInt(6)+1
+         var status = when(random){
+             1->R.drawable.dice_1
+             2->R.drawable.dice_2
+             3->R.drawable.dice_3
+             4->R.drawable.dice_4
+             5->R.drawable.dice_5
+             6->R.drawable.dice_6
+             else ->R.drawable.empty_dice
+         }
+         dice.setImageResource(status)
     }
 }
