@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.*
 import java.util.*
 
+//Finally Done!
 class MainActivity : AppCompatActivity() {
     lateinit var dice : ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
